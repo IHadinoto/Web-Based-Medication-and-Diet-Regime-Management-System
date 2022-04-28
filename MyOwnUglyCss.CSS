@@ -1,0 +1,453 @@
+/* color are chosen picked from  Coolors.co for a better reading and comfort HCI purpose
+
+    same color theme across pages help user conecntrate and easy to locate the websites
+
+    #353535 
+    #3C6E71
+    #FFFFFF
+    #D9D9D9
+    #284B63
+
+    All code is written by meself except:
+    tooltip code is adapted from W3C https://www.w3schools.com/css/css_tooltip.asp
+    modal is adapted from W3C https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration:underline;
+
+}
+
+
+
+.title {
+    height: auto;
+    width:  100%;
+    background-color: #D9D9D9;
+    color:#3C6E71;
+    text-align: left;
+}
+
+.bottomtag {
+    position:fixed;
+    bottom: 0px;
+    background-color: #D9D9D9;
+    width: 100%;
+    text-align: center;
+    color:#3C6E71;
+}
+
+.plain{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.plain:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.navbar{
+    /* overflow: hidden; */
+    background-color: #284B63;
+    list-style-type: none;
+    width:  100%;
+    margin: 0px;
+    padding: 2px;
+    height: auto;
+    display: flex;
+    /* justify-content: flex-end */
+}
+
+.navbar a{
+    list-style-type: none;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover{
+    list-style-type: none;
+    background-color: #353535;
+    margin: 0;
+    padding: 5px 5px;
+    font-size: 18px;
+    border:  solid #284B63;
+
+}
+
+.navbar a:active{
+    background-color: #284B63;
+    color:#3C6E71;
+}
+
+.navbar .reglogbutton{
+    border: solid #3C6E71;
+    background-color: red;
+    text-align: right;
+    width: 20%;
+    float: right;
+}
+
+.main {
+    padding: 16px;
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 2px;
+}
+
+.fulltable {
+    width: 100%;
+    overflow:auto;
+    font-size: 10;
+}
+
+.fulltable thead{
+    text-align: left;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+}
+
+.fulltable .firstcol{
+    text-align: center;
+    border-right: double #3C6E71;
+    border-left: double #3C6E71;
+
+}
+
+.fulltable tr:hover{
+    background-color: #284B63;
+    color: #FFFFFF;
+}
+
+p{
+    padding: 2px;
+}
+
+.submitmethod{
+    columns: 2;
+}
+
+/* the tool tip css not my own work, it is from code from w3c 
+https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #3C6E71; 
+    text-align: left;
+  }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #3C6E71;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    content: " ";
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.list2c{
+    columns: 2;
+    display:inline-block
+}
+
+.r2c{
+    columns: 2;
+}
+
+.list2c .col{
+    text-align: center;
+    list-style-type:none;
+    
+}
+
+.colleft{
+    text-align: left;
+    list-style-type:none;
+}
+
+.colright{
+    text-align: right;
+    list-style-type:none;
+    
+}
+
+.list2c .col .content_list{
+    text-align: left;
+    list-style-type:lower-roman;
+    
+}
+
+
+.icsfile{
+    border: solid #3C6E71;
+    background-color: #284B63;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main .citetext{
+    text-align: right;
+    color: #284b6380;
+    display: inline-block;
+
+}
+
+.focus{
+    background-color: #87c4c7;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    padding: 10;
+    margin: 5%;
+    border: solid 10px #FFFFFF;
+}
+
+.co{
+    color: green;
+    font-weight: bold;
+    border: 1px seashell;
+}
+
+.wr{
+    color: red;
+    font-weight: bold;
+    border: dotted 1px yellow;
+    text-align: middle;
+}
+
+.grid-container{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container-main{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-item-main {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #284B63;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #284B63;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.grid-item-s {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #284B63;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor:cell;
+}
+
+.grid-item:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #353535;
+}
+
+/* THis is adopted from w3school */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-size: 20px;
+
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-400px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  .modal-header {
+    padding: 1px 16px;
+    background-color: #284B63;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 16px 16px;
+    text-align: left;
+    overflow:scroll;
+    height: 500px;
+    }
+  
+  .modal-footer {
+    padding: 1px 16px;
+    background-color: #353535;
+    color: white;
+  }
+
+.column {
+float: left;
+padding: 10px;
+}
+
+.left {
+    width: 26%;
+}
+
+.right {
+    width: 70%;
+}
+
+.left-s {
+    width: 40%;
+}
+
+.right-s {
+    float: right;
+
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.trigger {
+    width: 100%;
+    overflow:auto;
+    font-size: 10;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+
+.arrangetable{
+    width: 100%;
+    overflow:auto;
+    font-size: 10;
+    vertical-align: baseline;
+}
+
+
+.arrangetable thead{
+    text-align: left;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+}
+
+.arrangetable .firstcol{
+    text-align: center;
+    border-right: double #3C6E71;
+    border-left: double #3C6E71;
+
+}
+
+.arrangetable td:hover{
+    background-color: #284b6363;
+    color: #FFFFFF;
+}
+
+
+.bcell{
+    border: solid 2px #284B63;
+}
+
+.regime{
+    text-decoration: underline green;
+    font: 10;
+    border: dotted 1px #284B63;
+
+
+}
+
+.medication{
+    text-decoration: underline blue;
+    font: 10;
+    border: dashed 1px #284B63;
+
+}
+
+.stable {
+    border-collapse: collapse;
+    width: 100%;
+    font: 6;
+}
+
+.stable th {
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+.stable td{
+    border: 1px solid #ddd;
+    padding: 1px;
+    font: 6;
+}
+.stable tr:nth-child(even){background-color: #f2f2f2;}
+
+.stable tr:hover {background-color: #ddd;}
+
+.stable th {
+    text-align: left;
+    background-color: rgba(0, 128, 0, 0.664);
+    color: white;
+}
